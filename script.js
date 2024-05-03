@@ -19,7 +19,8 @@ function create() {
   this.player.setCollideWorldBounds(true);
 }
 
-function update() {
+function update(time, delta) {
+  console.log(delta)
   let cursors = this.input.keyboard.createCursorKeys();
   if (
     cursors.left.isDown ||
